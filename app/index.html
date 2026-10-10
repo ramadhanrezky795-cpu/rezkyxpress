@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Rezkyxpress adalah platform belanja dan layanan cepat yang siap memenuhi kebutuhan harian Anda dengan pilihan produk yang praktis, berkualitas, dan terjangkau."
+    />
+    <title>Rezkyxpress | Belanja Cepat & Mudah</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav">
+        <div class="brand" aria-label="Logo Rezkyxpress">
+          <span class="brand-mark">R</span>
+          <span>Rezkyxpress</span>
+        </div>
+        <nav class="main-nav" aria-label="Navigasi utama">
+          <a href="#home">Home</a>
+          <a href="#products">Produk</a>
+          <a href="#features">Fitur</a>
+          <a href="#promo">Promo</a>
+          <a href="#reviews">Ulasan</a>
+        </nav>
+        <div class="nav-actions">
+          <button class="btn btn-light">Masuk</button>
+          <button class="btn btn-primary">Keranjang <span id="cart-count">0</span></button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <span class="eyebrow">#BelanjaLebihCepat</span>
+            <h1>Produk favoritmu, dikirim cepat tanpa ribet.</h1>
+            <p>
+              Rezkyxpress menghadirkan solusi belanja sehari-hari yang praktis,
+              aman, dan hemat waktu. Cukup pilih produk, bayar, tunggu di rumah,
+              semua terasa gampang.
+            </p>
+            <div class="cta-group">
+              <a class="btn btn-primary" href="#products">Belanja Sekarang</a>
+              <a class="btn btn-secondary" href="#features">Lihat Fitur</a>
+            </div>
+            <div class="stat-row" aria-label="Statistik Rezkyxpress">
+              <div>
+                <strong>25k+</strong>
+                <span>Pelanggan</span>
+              </div>
+              <div>
+                <strong>1.2k</strong>
+                <span>Produk</span>
+              </div>
+              <div>
+                <strong>30m</strong>
+                <span>Pengiriman</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual" aria-label="Ilustrasi produk Rezkyxpress">
+            <div class="product-showcase">
+              <div class="showcase-badge">Gratis Ongkir</div>
+              <div class="phone-card">
+                <div class="mini-header">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <div class="product-box large">
+                  <span class="tag">Best Seller</span>
+                  <div class="item-visual"></div>
+                  <h3>Pack Daily</h3>
+                  <p>Rp 149.000</p>
+                </div>
+                <div class="product-row">
+                  <div class="product-box small">
+                    <div class="item-visual small-box"></div>
+                    <h4>Snack</h4>
+                  </div>
+                  <div class="product-box small accent">
+                    <div class="item-visual small-box alt"></div>
+                    <h4>Drink</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="trust-bar">
+        <div class="container trust-inner">
+          <span>Trusted by</span>
+          <div class="brands">
+            <span>ShopEase</span>
+            <span>GoDaily</span>
+            <span>MarketHub</span>
+            <span>QuickBuy</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="products" class="products section">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow eyebrow-dark">Produk Unggulan</span>
+            <h2>Pilih kebutuhanmu dengan cepat</h2>
+          </div>
+
+          <div class="filter-bar" aria-label="Filter produk">
+            <button class="filter-btn active" data-filter="all">Semua</button>
+            <button class="filter-btn" data-filter="makanan">Makanan</button>
+            <button class="filter-btn" data-filter="minuman">Minuman</button>
+            <button class="filter-btn" data-filter="rumah">Rumah</button>
+            <button class="filter-btn" data-filter="kecantikan">Kecantikan</button>
+          </div>
+
+          <div class="product-grid">
+            <article class="product-card" data-category="makanan">
+              <span class="product-tag">Makanan</span>
+              <div class="product-image food-one"></div>
+              <h3>Snack Combo</h3>
+              <p>Campuran snack favorit keluarga dengan rasa yang bikin nagih.</p>
+              <div class="product-meta">
+                <strong>Rp 54.000</strong>
+                <button class="add-cart" data-name="Snack Combo">+ Keranjang</button>
+              </div>
+            </article>
+
+            <article class="product-card" data-category="minuman">
+              <span class="product-tag">Minuman</span>
+              <div class="product-image drink-one"></div>
+              <h3>Fresh Burst</h3>
+              <p>Minuman segar dengan rasa buah alami dan citarasa premium.</p>
+              <div class="product-meta">
+                <strong>Rp 32.000</strong>
+                <button class="add-cart" data-name="Fresh Burst">+ Keranjang</button>
+              </div>
+            </article>
+
+            <article class="product-card" data-category="rumah">
+              <span class="product-tag">Rumah</span>
+              <div class="product-image home-one"></div>
+              <h3>Clean Home Kit</h3>
+              <p>Paket pembersih rumah yang cocok untuk kebutuhan harian.</p>
+              <div class="product-meta">
+                <strong>Rp 89.000</strong>
+                <button class="add-cart" data-name="Clean Home Kit">+ Keranjang</button>
+              </div>
+            </article>
+
+            <article class="product-card" data-category="kecantikan">
+              <span class="product-tag">Kecantikan</span>
+              <div class="product-image beauty-one"></div>
+              <h3>Glow Care</h3>
+              <p>Perawatan wajah ringan yang aman dan bikin kulit terasa segar.</p>
+              <div class="product-meta">
+                <strong>Rp 75.000</strong>
+                <button class="add-cart" data-name="Glow Care">+ Keranjang</button>
+              </div>
+            </article>
+
+            <article class="product-card" data-category="makanan">
+              <span class="product-tag">Makanan</span>
+              <div class="product-image food-two"></div>
+              <h3>Rice Bowl Kit</h3>
+              <p>Paket makan praktis lengkap untuk kebutuhan siang hari.</p>
+              <div class="product-meta">
+                <strong>Rp 68.000</strong>
+                <button class="add-cart" data-name="Rice Bowl Kit">+ Keranjang</button>
+              </div>
+            </article>
+
+            <article class="product-card" data-category="minuman">
+              <span class="product-tag">Minuman</span>
+              <div class="product-image drink-two"></div>
+              <h3>Protein Shake</h3>
+              <p>Cocok untuk gaya hidup aktif dan kebutuhan nutrisi harian.</p>
+              <div class="product-meta">
+                <strong>Rp 58.000</strong>
+                <button class="add-cart" data-name="Protein Shake">+ Keranjang</button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="features section">
+        <div class="container">
+          <div class="section-heading centered">
+            <span class="eyebrow eyebrow-dark">Kenapa Pilih Kami</span>
+            <h2>Belanja yang lebih efisien dan menyenangkan</h2>
+          </div>
+
+          <div class="feature-grid">
+            <div class="feature-card">
+              <div class="icon">⚡</div>
+              <h3>Pengiriman Cepat</h3>
+              <p>Pesanan dikirim dalam waktu singkat dengan tracking yang jelas.</p>
+            </div>
+            <div class="feature-card">
+              <div class="icon">🛡️</div>
+              <h3>Keamanan Terjamin</h3>
+              <p>Pembayaran aman, produk asli, dan layanan pelanggan responsif.</p>
+            </div>
+            <div class="feature-card">
+              <div class="icon">💸</div>
+              <h3>Harga Kompetitif</h3>
+              <p>Harga terbaik untuk kebutuhan harian dengan promo yang terus ada.</p>
+            </div>
+            <div class="feature-card">
+              <div class="icon">📦</div>
+              <h3>Katalog Lengkap</h3>
+              <p>Mudah memilih produk dari kebutuhan rumah hingga kebutuhan pribadi.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="promo" class="promo section">
+        <div class="container promo-box">
+          <div>
+            <span class="eyebrow">Promo Spesial</span>
+            <h2>Diskon hingga 40% untuk pembelian pertama</h2>
+          </div>
+          <a href="#products" class="btn btn-primary">Ambil Promo</a>
+        </div>
+      </section>
+
+      <section id="reviews" class="reviews section">
+        <div class="container">
+          <div class="section-heading centered">
+            <span class="eyebrow eyebrow-dark">Testimoni</span>
+            <h2>Pelanggan puas dengan Rezkyxpress</h2>
+          </div>
+          <div class="review-grid">
+            <article class="review-card">
+              <p>
+                “Proses belanjanya sangat mudah, pengiriman cepat, dan produknya
+                selalu sesuai harapan. Saya suka banget.”
+              </p>
+              <div class="reviewer">
+                <strong>Rina A.</strong>
+                <span>Customer</span>
+              </div>
+            </article>
+            <article class="review-card">
+              <p>
+                “Rezkyxpress mengubah cara saya berbelanja kebutuhan rumah dan
+                harian. Praktis dan terjangkau.”
+              </p>
+              <div class="reviewer">
+                <strong>Fajar M.</strong>
+                <span>Founder</span>
+              </div>
+            </article>
+            <article class="review-card">
+              <p>
+                “Harganya bersaing dan layanannya responsif. Semua terasa cepat dan
+                nyaman dari awal sampai akhir.”
+              </p>
+              <div class="reviewer">
+                <strong>Siti N.</strong>
+                <span>Creative</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div>
+          <div class="brand footer-brand">
+            <span class="brand-mark">R</span>
+            <span>Rezkyxpress</span>
+          </div>
+          <p>Belanja cepat, aman, dan nyaman untuk kebutuhan sehari-hari Anda.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#products">Produk</a>
+          <a href="#features">Fitur</a>
+          <a href="#promo">Promo</a>
+        </div>
+        <div class="footer-links">
+          <a href="#">Kontak</a>
+          <a href="#">Bantuan</a>
+          <a href="#">Karier</a>
+        </div>
+      </div>
+      <div class="container copyright">© 2026 Rezkyxpress. All rights reserved.</div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
